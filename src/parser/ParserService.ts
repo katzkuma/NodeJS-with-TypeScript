@@ -1,5 +1,5 @@
-function parsePosts(posts) {
-  return posts.map((post) => {
+function parsePosts(posts: any) {
+  return posts.map((post: any) => {
     return {
       _id: post._id,
       title: post.title,
@@ -8,7 +8,7 @@ function parsePosts(posts) {
   });
 }
 
-function parsePost(post) {
+function parsePost(post: any) {
   return {
     _id: post._id,
     title: post.title,
@@ -16,7 +16,9 @@ function parsePost(post) {
   };
 }
 
-module.exports = {
-  parsePosts,
-  parsePost,
-};
+export default parsePosts
+
+// module.exports = {
+//   parsePosts,
+//   parsePost,
+// };

@@ -1,6 +1,7 @@
-const { PostModel } = require("../schema/Post.Schema");
+import PostModel from "../schema/Post.Schema"
+// const { PostModel } = require("../schema/Post.Schema");
 
-async function CreatePost(title, description) {
+async function CreatePost(title: string, description: string) {
   try {
     const newPost = new PostModel({
       title,
@@ -31,6 +32,8 @@ async function CreatePost(title, description) {
   }
 }
 
-module.exports = {
-  CreatePost,
-};
+
+export default CreatePost;
+// module.exports = {
+//   CreatePost,
+// };

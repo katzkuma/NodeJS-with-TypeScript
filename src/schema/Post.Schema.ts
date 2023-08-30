@@ -1,4 +1,5 @@
-const {Schema, model} = require('mongoose');
+import { Schema, model } from "mongoose"
+// const {Schema, model} = require('mongoose');
 
 const PostSchema = new Schema({
     title: {
@@ -16,7 +17,7 @@ const PostSchema = new Schema({
 
 const PostModel = model("post", PostSchema);
 
-
-module.exports = {
-    PostModel
-}
+export default PostModel;
+// module.exports = {
+//     PostModel
+// }

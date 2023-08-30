@@ -1,6 +1,8 @@
-const { PostModel } = require("../schema/Post.Schema");
+// const { PostModel } = require("../schema/Post.Schema");
+import PostModel from "../schema/Post.Schema"
 
-const { parsePosts } = require("../parser/ParserService");
+// const { parsePosts } = require("../parser/ParserService");
+import parsePosts from "../parser/ParserService"
 
 async function GetAllPosts() {
   try {
@@ -35,6 +37,8 @@ async function GetAllPosts() {
   }
 }
 
-module.exports = {
-  GetAllPosts,
-};
+// module.exports = {
+//   GetAllPosts,
+// };
+
+export default GetAllPosts
